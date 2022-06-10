@@ -15,7 +15,7 @@ import com.ddf.fakeplayer.util.Logger;
 import com.ddf.fakeplayer.util.ProtocolVersionUtil;
 import com.nukkitx.protocol.bedrock.*;
 import com.nukkitx.protocol.bedrock.data.inventory.ItemStackRequest;
-import com.nukkitx.protocol.bedrock.v408.Bedrock_v408;
+import com.nukkitx.protocol.bedrock.v527.Bedrock_v527;
 
 import java.io.Closeable;
 import java.net.InetSocketAddress;
@@ -47,7 +47,7 @@ public class Client implements Closeable {
     private final Map<Integer, ItemStackRequest> itemStackRequests = new ConcurrentHashMap<>();
     private State state;
     private final List<StateChangeListener> stateChangeListeners = Collections.synchronizedList(new ArrayList<>());
-    private BedrockPacketCodec defaultPacketCodec = Bedrock_v408.V408_CODEC;
+    private BedrockPacketCodec defaultPacketCodec = Bedrock_v527.V527_CODEC;
     private SkinType skinType = SkinType.STEVE;
     private int customSkinImageWidth;
     private int customSkinImageHeight;
