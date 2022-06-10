@@ -26,7 +26,7 @@ public class Config {
 
     private boolean debug = true;
     private boolean configured = false;
-    private int defaultProtocolVersion = 408;
+    private int defaultProtocolVersion = 527;
     private String serverAddress = "localhost";
     private int serverPort = 19132;
     private String serverPublicKey = "";
@@ -35,7 +35,7 @@ public class Config {
     private long reconnectDelay = 3000;
     private boolean webSocketEnabled = false;
     private int webSocketPort = 54321;
-    private String language = "zh-cn";
+    private String language = "en-us";
     private String theme = "dark";
     private List<PlayerData> players = new ArrayList<>();
     private Map<String, CustomSkinData> customSkins = new LinkedHashMap<>();
